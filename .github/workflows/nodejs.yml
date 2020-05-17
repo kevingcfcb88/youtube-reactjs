@@ -30,9 +30,10 @@ jobs:
       uses: docker/build-push-action@v1.1.0
       with:
         username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
+        password: ${{ secrets.DOCKER_PASS }}
         # registry: docker.pkg.github.com
-        registry: kevingcfcb88/mini-youtube-reactjs
-        repository: kevingcfcb88/youtube-reactjs/mini-youtube-reactjs
+        # registry: kevingcfcb88/youtube-reactjs/youtube-reactjs
+        # repository: kevingcfcb88/youtube-reactjs/mini-youtube-reactjs
+        repository: kevingcfcb88/mini-youtube-reactjs
         tags: reactjs, youtube
 
